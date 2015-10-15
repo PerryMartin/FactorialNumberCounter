@@ -36,15 +36,15 @@ namespace FactorialNumberCounter
             factorialNumber = Convert.ToDouble(this.txtFactorial.Text);
 
 
-            for (int factorialCounter = 1; factorialCounter <= 10; factorialCounter++)
+            for (int factorialCounter = 1; factorialCounter <= factorialNumber; factorialCounter++)
             {
 
-
+                this.lstFactorialNumber.Items.Add(factorialAnswer);
                 factorialAnswer = factorialAnswer * factorialCounter;
             }
 
             this.txtAnswer.Text = Convert.ToString(factorialAnswer);
-            this.lstFactorialNumber.Items.Add(factorialAnswer);
+           
                 
 
         }
