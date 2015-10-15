@@ -29,21 +29,23 @@ namespace FactorialNumberCounter
         {
             Double factorialNumber;
             Double factorialAnswer;
-            int factorialCounter;
+
 
             this.lstFactorialNumber.Items.Clear();
             factorialAnswer = 1;
             factorialNumber = Convert.ToDouble(this.txtFactorial.Text);
-            factorialCounter = 0;
 
-            for ( factorialCounter = 1; factorialCounter <= 10; factorialCounter++);
+
+            for (int factorialCounter = 1; factorialCounter <= 10; factorialCounter++)
             {
-                factorialCounter = factorialCounter + 1;
-                this.lstFactorialNumber.Items.Add(factorialCounter);
+
+
                 factorialAnswer = factorialAnswer * factorialCounter;
-            }  
-             
+            }
+
             this.txtAnswer.Text = Convert.ToString(factorialAnswer);
+            this.lstFactorialNumber.Items.Add(factorialAnswer);
+                
 
         }
     }
